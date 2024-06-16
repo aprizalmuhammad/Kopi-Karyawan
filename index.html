@@ -27,16 +27,52 @@
             <a href="#home"> Beranda</a>
             <a href="#about">Tentang Kami</a>
             <a href="#menu">Menu</a>
+            <a href="#products">Produk</a>
             <a href="#contact">Kontak</a>
         </div>
-
         <div class="navbar-extra">
-            <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
-    </nav>
 
+        <!-- Search Form Start-->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- Search Form End -->
+
+        <!-- Shopping Card Start -->
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="img/products/product1.jpg" alt="product 1" />
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">IDR 50K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/products/product1.jpg" alt="product 1" />
+                <div class="item-detail">
+                    <h3>Product 2</h3>
+                    <div class="item-price">IDR 50K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/products/product1.jpg" alt="product 1" />
+                <div class="item-detail">
+                    <h3>Product 3</h3>
+                    <div class="item-price">IDR 50K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+        </div>
+
+        <!-- Shopping Card End -->
+    </nav>
     <!--NAVBAR END-->
 
     <!--HERO SECTION START-->
@@ -47,13 +83,11 @@
             <a href="#" class="cta">Beli Sekarang</a>
         </main>
     </section>
-
     <!--HERO SECTION  EMD-->
 
     <!--ABOUT SECTION START-->
     <section id="about" class="about">
         <h2><span>Tentang</span> Kami</h2>
-
         <div class="row">
             <div class="about-img">
                 <img src="img/tentangkami.jpg" alt="Tentang Kami" />
@@ -66,15 +100,12 @@
             </div>
         </div>
     </section>
-
     <!--ABOUT SECTION END-->
 
     <!--MENU SECTION START-->
     <section id="menu" class="menu">
         <h2><span>Menu</span> Kami</h2>
-
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam est labore sunt molestias deleniti impedit unde magni modi temporibus?</p>
-
         <div class="row">
             <div class="menu-card">
                 <img src="img/1.jpg" alt="matcha" class="menu-card-image" />
@@ -103,19 +134,85 @@
             </div>
         </div>
     </section>
-
     <!--MENU SECTION END-->
+
+    <!--  Product Section Start -->
+    <section class="products" id="products">
+        <h2><span>Produk Unggulan</span> Kami</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit exercitationem ad maiores consequatur. Deserunt, in?</p>
+
+        <div class="row">
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/products/product1.jpg" alt="Product 1" />
+                </div>
+                <div class="product-content">
+                    <h3>Coffee Beans 1</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="product-price">IDR 3OK <span>IDR 55K</span></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/products/product1.jpg" alt="Product 1" />
+                </div>
+                <div class="product-content">
+                    <h3>Coffee Beans 1</h3>
+                    <div class="product-stars">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">IDR 3OK <span>IDR 55K</span></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/products/product1.jpg" alt="Product 1" />
+                </div>
+                <div class="product-content">
+                    <h3>Coffee Beans 1</h3>
+                    <div class="product-stars">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">IDR 3OK <span>IDR 55K</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End -->
 
     <!--CONTACT SECTION START-->
     <section id="contact" class="contact">
         <h2><span>Kontak</span> Kami</h2>
-
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusantium quas aperiam sit iusto nulla, tempora expedita laudantium. Fugit ea est cum natus cupiditate velit.</p>
-
         <div class="row">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.375883244293!2d106.80713821100895!3d-6.345345693617963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ee8173092ff5%3A0x1ad633cc0cdb32f1!2sJl.%20Wr.%20Sila%2C%20Kec.%20Jagakarsa%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012630!5e0!3m2!1sid!2sid!4v1717556578818!5m2!1sid!2sid"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-
             <form action="">
                 <div class="input-group">
                     <i data-feather="user"></i>
@@ -129,36 +226,54 @@
                     <i data-feather="phone"></i>
                     <input type="text" placeholder="no hp" />
                 </div>
-
                 <button type="submit" class="btn">Kirim Pesan</button>
             </form>
         </div>
     </section>
-
     <!--CONTACT SECTION END-->
 
     <!--FOOTER START-->
-
     <footer>
         <div class="socials">
             <a href="#"><i data-feather="instagram"></i></a>
             <a href="#"><i data-feather="facebook"></i></a>
             <a href="#"><i data-feather="twitter"></i></a>
         </div>
-
         <div class="links">
             <a href="#home">Beranda</a>
             <a href="#about">Tentang Kami</a>
             <a href="#menu">Menu</a>
             <a href="#contact">Kontak</a>
         </div>
-
         <div class="credit">
             <p>Created by <a href="">Aprizal</a>. | &copy; 2024.</p>
         </div>
     </footer>
-
     <!--FOOTER END-->
+
+    <!-- Modal Box Item Detail Start-->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/products/product1.jpg" alt="product 1" />
+                <div class="product-content">
+                    <h3>Product 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam fugit vitae repellendus ab quia officiis a accusantium dolores modi.</p>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+                    <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Modal Box Item Detail End -->
 
     <!--feather icons-->
     <script>
@@ -166,7 +281,6 @@
     </script>
 
     <!--MY JAVASCRIPT-->
-
     <script src="js/script.js"></script>
 </body>
 
