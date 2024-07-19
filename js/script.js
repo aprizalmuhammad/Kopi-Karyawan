@@ -1,8 +1,8 @@
 //TOGGLE CLASS ACTIVE UNTUK HAMBURGER MENU
 
-//ketika hamburger di klik
 const navbarNav = document.querySelector(".navbar-nav");
-document.querySelector("#hamburger-menu").onclick = (event) => {
+//ketika hamburger di klik
+document.querySelector("#hamburger-menu").onclick = () => {
     navbarNav.classList.toggle("active");
 };
 
